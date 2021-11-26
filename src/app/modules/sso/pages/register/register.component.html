@@ -1,0 +1,25 @@
+<span class="u-bold">Registrarse</span>
+<form [formGroup]="userForm.baseForm">
+    <div class="mg-top-20">
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Nombre" formControlName="nombre">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Correo electronico</mat-label>
+            <input matInput placeholder="Correo electronico" formControlName="correo">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Cedula</mat-label>
+            <input matInput placeholder="Nombre" formControlName="cedula">
+        </mat-form-field>
+    </div>
+</form>
+<button type="submit" class="u-btn u-btn--line u-btn--blue-dark w-100" (click)="register()">
+    <span>
+        Registrarse
+    </span>
+</button>
+<div class="mg-y-10">
+    <a class="link" [routerLink]="['/sso/login']">Iniciar sesión </a>
+</div>

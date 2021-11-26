@@ -1,0 +1,21 @@
+<form [formGroup]="creditForm.baseForm" (ngSubmit)="createCredit()">
+    <div class="mg-top-20">
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Nombre" formControlName="nombre" readonly>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Monto</mat-label>
+            <input matInput type="number" placeholder="Monto" formControlName="monto">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Fecha a pagar</mat-label>
+            <input matInput formControlName="fecha" [min]="minDate" [matDatepicker]="picker" disabled>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker disabled="false"></mat-datepicker>
+        </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary" [disabled]="!creditForm.baseForm.valid">
+        Solicitar credito
+    </button>
+</form>

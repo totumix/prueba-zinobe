@@ -1,0 +1,15 @@
+<span class="u-bold">Login</span>
+<div class="mg-top-20">
+    <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Correo electrónico</mat-label>
+        <input matInput name="email" type="text" [(ngModel)]="email" placeholder="Correo electrónico">
+    </mat-form-field>
+</div>
+<button type="submit" class="u-btn u-btn--line u-btn--blue-dark w-100" (click)="login()">
+    <span>
+        Iniciar sesión
+    </span>
+</button>
+<div class="mg-y-10">
+    <span>Nuevo usuario? <a class="link" [routerLink]="['/sso/register']">Registrarse </a></span>
+</div>
