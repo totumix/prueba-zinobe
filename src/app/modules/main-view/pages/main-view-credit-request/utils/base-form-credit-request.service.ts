@@ -19,7 +19,7 @@ export class BaseFormCreditRequestService {
     this.baseForm = this.fb.group({
       id: [Math.random()],
       nombre: [null, Validators.required],
-      monto: [null, [Validators.min(10000), Validators.max(1000000), Validators.required]],
+      monto: [null, [Validators.min(10000), Validators.max(100000), Validators.required]],
       aprobado: [null],
       fecha: [null],
     });

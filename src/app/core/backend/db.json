@@ -1,81 +1,8 @@
 {
   "users": [
-    {
-      "id": 1,
-      "nombre": "juan chavez",
-      "correo": "totucr95@gmail.com",
-      "cedula": 1095825439
-    },
-    {
-      "id": 0.5327781043452042,
-      "nombre": "juan",
-      "correo": "totucr95@gmail.com",
-      "cedula": "1095825439"
-    }
+
   ],
   "credits": [
-    {
-      "id": 0.3871874743878858,
-      "nombre": "juan",
-      "monto": 10000,
-      "aprobado": true,
-      "fecha": "2024-06-12T05:00:00.000Z"
-    },
-    {
-      "id": 0.8008149320075884,
-      "nombre": "juan",
-      "monto": 23333,
-      "aprobado": true,
-      "fecha": null
-    },
-    {
-      "id": 0.41094018044462066,
-      "nombre": "juan",
-      "monto": 322222,
-      "aprobado": false,
-      "fecha": null
-    },
-    {
-      "id": 0.08517290129714095,
-      "nombre": "juan",
-      "monto": 343434,
-      "aprobado": true,
-      "fecha": null
-    },
-    {
-      "id": 0.1474751287946452,
-      "nombre": "juan",
-      "monto": 232323,
-      "aprobado": true,
-      "fecha": null
-    },
-    {
-      "id": 0.1559837047143937,
-      "nombre": "juan",
-      "monto": 232323,
-      "aprobado": true,
-      "fecha": "2024-06-27T05:00:00.000Z"
-    },
-    {
-      "id": 0.9935720470288119,
-      "nombre": "juan",
-      "monto": 232323,
-      "aprobado": false,
-      "fecha": "2024-06-12T05:00:00.000Z"
-    },
-    {
-      "id": 0.32294370308092213,
-      "nombre": "juan",
-      "monto": 23333,
-      "aprobado": true,
-      "fecha": "2024-06-12T05:00:00.000Z"
-    },
-    {
-      "id": 0.4895575726378054,
-      "nombre": "juan",
-      "monto": 23232,
-      "aprobado": true,
-      "fecha": "2024-06-12T05:00:00.000Z"
-    }
+   
   ]
 }

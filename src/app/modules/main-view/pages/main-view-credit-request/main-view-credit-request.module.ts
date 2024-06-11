@@ -48,9 +48,6 @@ const routes: Routes = [
         MatDialogModule,
         MatProgressSpinnerModule,
         RouterModule.forChild(routes)
-    ],
-    providers: [
-        BaseFormCreditRequestService
     ]
 })
 export class MainViewCreditRequestModule { }
