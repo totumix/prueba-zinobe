@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { CrudService } from './config/crudService';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 const routes: Routes = [
   { path: "", redirectTo: "/sso/login", pathMatch: "full" },
@@ -19,19 +19,13 @@ const routes: Routes = [
   }
 ];
 
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    RouterModule.forRoot(routes)
-  ],
-  providers: [
-    CrudService
-  ],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        BrowserAnimationsModule,
+        RouterModule.forRoot(routes)], providers: [
+        CrudService,
+        provideHttpClient(withInterceptorsFromDi())
+    ] })
 export class AppModule { }
