@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { BehaviorSubject } from 'rxjs';
 import { Credit } from 'src/app/core/models/Credit.model';
 
@@ -7,7 +7,7 @@ import { Credit } from 'src/app/core/models/Credit.model';
   providedIn: 'root'
 })
 export class BaseFormCreditRequestService {
-  public baseForm: FormGroup;
+  public baseForm: UntypedFormGroup;
   public creditValue = new BehaviorSubject<any>(0);
   public value = this.creditValue.asObservable();
 
@@ -15,7 +15,7 @@ export class BaseFormCreditRequestService {
     this.creditValue.next(monto);
   }
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: UntypedFormBuilder) {
     this.baseForm = this.fb.group({
       id: [Math.random()],
       nombre: [null, Validators.required],

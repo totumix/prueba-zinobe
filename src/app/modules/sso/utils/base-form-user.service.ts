@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { User } from 'src/app/core/models/User.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BaseFormUserService {
-  public baseForm: FormGroup;
+  public baseForm: UntypedFormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: UntypedFormBuilder) {
     this.baseForm = this.fb.group({
       id: [Math.random()],
       nombre: [null, Validators.required],

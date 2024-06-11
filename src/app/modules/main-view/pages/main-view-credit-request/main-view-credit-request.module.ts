@@ -28,32 +28,29 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  declarations: [
-    MainViewCreditRequestComponent,
-    CreditsRequestTableComponent,
-    AddCreditRequestComponent,
-    ConfirmationDialogComponent
-  ],
-  imports: [
-    CommonModule,
-    MatTableModule,
-    MatPaginatorModule,
-    ReactiveFormsModule,
-    MatIconModule,
-    MatInputModule,
-    MatButtonModule,
-    MatSnackBarModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatDialogModule,
-    MatProgressSpinnerModule,
-    RouterModule.forChild(routes)
-  ],
-  entryComponents: [
-    ConfirmationDialogComponent
-  ],
-  providers: [
-    BaseFormCreditRequestService
-  ]
+    declarations: [
+        MainViewCreditRequestComponent,
+        CreditsRequestTableComponent,
+        AddCreditRequestComponent,
+        ConfirmationDialogComponent
+    ],
+    imports: [
+        CommonModule,
+        MatTableModule,
+        MatPaginatorModule,
+        ReactiveFormsModule,
+        MatIconModule,
+        MatInputModule,
+        MatButtonModule,
+        MatSnackBarModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatDialogModule,
+        MatProgressSpinnerModule,
+        RouterModule.forChild(routes)
+    ],
+    providers: [
+        BaseFormCreditRequestService
+    ]
 })
 export class MainViewCreditRequestModule { }
